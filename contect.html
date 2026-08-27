@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Modern hardy Cnteen </title>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+body{
+  background:#f4f4f4;
+  color:#333;
+}
+a{text-decoration:none;color:inherit;}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 8%;
+  background:white;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.navbar .logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#100300;
+}
+.navbar ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+.navbar ul li a{
+  font-weight:500;
+  transition:0.3s;
+}
+.navbar ul li a:hover{
+  color:#ff4b2b;
+}
+
+.contact-area{
+  max-width:900px;
+  margin:40px auto;
+  background:white;
+  padding:40px;
+  border-radius:12px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+.title{
+  text-align:center;
+  margin-bottom:40px;
+}
+.title h1{
+  color:#ff4b2b;
+  font-size:36px;
+  margin-bottom:8px;
+}
+.title p{color:gray;}
+
+.info-cards{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:30px;
+}
+.info-cards .card{
+  flex:1 1 250px;
+  background:#fafafa;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  border-left:5px solid #ff4b2b;
+  transition:0.3s;
+}
+.info-cards .card:hover{
+  background:#fff3f0;
+}
+.info-cards .card i{
+  font-size:28px;
+  color:#ed2121;
+  margin-bottom:10px;
+}
+.info-cards .card p{
+  font-size:14px;
+}
+
+.contact-form form{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-bottom:30px;
+}
+.contact-form input,
+.contact-form textarea{
+  padding:12px 15px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:14px;
+  width:100%;
+}
+.contact-form button{
+  background:#ff4b2b;
+  color:white;
+  padding:15px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+.contact-form button:hover{
+  background:#ff1f00;
+}
+
+.map iframe{
+  width:100%;
+  height:250px;
+  border:none;
+  border-radius:10px;
+  margin-top:30px;
+}
+
+.back-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 25px;
+  background:#ff4b2b;
+  color:white;
+  border-radius:20px;
+  font-weight:bold;
+  transition:0.3s;
+}
+.back-btn:hover{
+  background:black;
+}
+
+
+.footer{
+  background:black;
+  color:white;
+  padding:50px 8% 20px;
+}
+.footer-container{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2rem;
+  justify-content:space-between;
+}
+.footer-section{
+  flex:1 1 250px;
+}
+.footer-section h3{
+  font-size:20px;
+  margin-bottom:15px;
+}
+.footer-section h3 span{
+  color:#ff4b2b;
+}
+.footer-section p,
+.footer-section li,
+.footer-section a{
+  font-size:14px;
+  margin-bottom:10px;
+}
+.footer-section ul{
+  padding:0;
+}
+.footer-section li{
+  list-style:none;
+}
+.footer-section a:hover{
+  color:#ff4b2b;
+}
+.socials a{
+  margin-right:10px;
+  font-size:18px;
+}
+.footer-bottom{
+  text-align:center;
+  margin-top:20px;
+  border-top:1px solid #444;
+  padding-top:10px;
+  font-size:14px;
+}
+
+
+@media(max-width:768px){
+  .info-cards{flex-direction:column;}
+}
+@media(max-width:920px){
+  .footer-container{flex-direction:column;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">MODERN<span> HARDY CANTEEN</span></div>
+  <ul>
+        <li><a href="website.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="contect.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="contact-area">
+
+  <div class="title">
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you! Send us a message.</p>
+  </div>
+
+
+  <div class="info-cards">
+    <div class="card">
+      <i class="fas fa-phone"></i>
+      <p>+94 076020260</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-envelope"></i>
+      <p>atiampara@sliate.ac.lk</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Hardy Advanced Technological Institute, Iginiyagala Road, Ampara.</p>
+    </div>
+  </div>
+
+
+  <div class="contact-form">
+    <form action="https://formsubmit.co/aasikmohammad2004@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="item Name" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+
+  <div class="map">
+    <iframe src="https://www.google.com/maps?q=Irakkamam&output=embed" loading="lazy"></iframe>
+  </div>
+
+  
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>About <span>Us</span></h3>
+      <p>We serve fresh, delicious food made with love.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick <span>Links</span></h3>
+      <ul>
+      <a href="website.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="contect.html">contect</a>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact <span>Us</span></h3>
+      <p><i class="fas fa-map-marker-alt"></i> Hardy Advanced Technological Institute, Iginiyagala Road, Ampara.</p>
+      <p><i class="fas fa-phone"></i>+94 0760202260</p>
+      <p><i class="fas fa-envelope"></i> aasikmohamed820@gmail.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    &copy;  2026 MyRestaurant. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
